@@ -1,38 +1,24 @@
 package Tests;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith;
 
-/**
- * Unit test for simple App.
- */
-public class RunCukeTests 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public RunCukeTests( String testName )
-    {
-        super( testName );
-    }
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( RunCukeTests.class );
-    }
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src/test/java/features", glue = "stepDefinitions", plugin = {}, tags = { "@SmokeTests" })
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+public class RunCukeTests {
+
+	@BeforeClass
+	public static void setup() {
+
+	}
+
+	@AfterClass
+	public static void tearDown() {
+
+	}
 }
