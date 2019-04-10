@@ -1,38 +1,16 @@
 package TestUtils;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import java.util.Random;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+public class CommonUtils {
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+	//get alpha numeric string based on the length 
+	public String getRandomString(int stringLength) {		
+		final String stringCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+        Random random = new Random();
+        StringBuilder stringBuilder = new StringBuilder(stringLength);
+        for (int i = 0; i < stringBuilder.capacity(); i++)
+            stringBuilder.append(stringCharacters.charAt(random.nextInt(stringCharacters.length())));
+        return stringBuilder.toString();
+	}
 }
