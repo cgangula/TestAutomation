@@ -25,5 +25,8 @@
 			<version>1.2.2</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- Add apache utils -->
+		<!-- Add extent reports -->
 	</dependencies>
 </project>

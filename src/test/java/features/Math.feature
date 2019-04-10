@@ -1,5 +1,7 @@
-@tag
+@Math
 Feature: Math feature
+
+  # Here we are using the same step deficitions for multiple scenarios
 
   @Addition @SmokeTests
   Scenario Outline: Adding two numbers
@@ -22,3 +24,4 @@ Feature: Math feature
       | number1 | number2 | value |
       |       5 |       3 |     2 |
       |     200 |     130 |    70 |
+      |     200 |     300 |  -100 |
