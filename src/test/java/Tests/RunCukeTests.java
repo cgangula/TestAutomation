@@ -1,7 +1,5 @@
 package Tests;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
@@ -12,13 +10,5 @@ import cucumber.api.junit.Cucumber;
 
 public class RunCukeTests {
 
-	@BeforeClass
-	public static void setup() {
 
-	}
-
-	@AfterClass
-	public static void tearDown() {
-
-	}
 }

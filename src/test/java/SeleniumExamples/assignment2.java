@@ -98,15 +98,16 @@ public class assignment2 {
 		
 	}
 
-	public static void main(String[] args) throws InterruptedException {
 
-		assignment2 sel = new assignment2();
-		sel.setupSelenium("chrome", "http://www.edureka.co");
-		sel.navigate();
-		sel.locatorTest();
+
+//
+//		assignment2 sel = new assignment2();
+//		sel.setupSelenium("chrome", "http://www.edureka.co");
+//		sel.navigate();
+//		sel.locatorTest();
 
 		
 
-	}
+//	}
 
 }
